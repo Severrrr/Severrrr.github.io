@@ -35,57 +35,80 @@ body {
 
 /* navigointi osuus */ /*myös logo */
 nav {
-    width: 100%;
+    width: 100%; 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
     padding: 10px;
     overflow: hidden;
 }
 
+/* Logon muotoilu */
 .logo {
-    position: relative;
-
-    right: 30%;
-    left: 1%;
-    bottom: 3rem;
-    width: 300px;
-    height: 300px;
-    padding: px;
-    
+    width: 300px; 
+    height: auto;
+    margin-left: 20px; 
 }
 
+/* Navigointipainikkeiden ulkoasu */
 nav ul {
     list-style: none;
-    width: 100%;
-    text-align: right;
-    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+nav ul li {
+    margin: 0 10px; 
 }
 
 nav ul li a {
     display: inline-block;
-    margin: 9px 50px;
-    position: relative;
-    letter-spacing: 1px;
-    bottom: 3rem;
     text-decoration: none; 
     color: #ffffff; 
     background-color: #64005f; 
     padding: 10px 20px; 
     border-radius: 25px; 
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     font-weight: bold;
-    letter-spacing: 1px; 
     transition: background-color 0.3s ease, transform 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
- 
 
-
+/* Hover-efekti */
 nav ul li a:hover {
     background-color: #91008c; 
     transform: translateY(-3px); 
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* Mobiilinäkymä: alle 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .logo {
+        margin: 0 auto; 
+        width: 120px; 
+        height: auto;
+    }
+    
+    nav ul {
+        margin-top: 20px; 
+        justify-content: center;
+        padding-right: 0;
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    nav ul li a {
+        font-size: 1rem; 
+        padding: 8px 16px;
+    }
 }
 
 /* tähän loppui navigointi */
@@ -180,7 +203,7 @@ nav ul li a:hover {
 
     .logo {
         position: relative;
-        left: 10%;
+        left: 20%;
 }
 }
 
@@ -279,8 +302,8 @@ body {
 }
 
 .custom-box2 h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
