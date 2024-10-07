@@ -1,0 +1,405 @@
+/* html sivujen muotoilua */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    width: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(81, 62, 255, 0.65),rgba(114, 74, 111, 0.65)), 
+    url(pexels-jakubzerdzicki-17561470.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+/* yleinen muotoilu loppuu tähän */
+
+
+/* navigointi osuus */ /*myös logo */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.logo {
+    position: relative;
+
+    right: 30%;
+    left: 1%;
+    bottom: 3rem;
+    width: 300px;
+    height: 300px;
+    padding: px;
+    
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin: 9px 50px;
+    position: relative;
+    letter-spacing: 1px;
+    bottom: 3rem;
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: #64005f; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+ 
+
+
+nav ul li a:hover {
+    background-color: #91008c; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* tähän loppui navigointi */
+
+
+/* etusivun tervetuloa boksi */
+.custom-box {
+    width: 40%;
+    margin: 0px auto;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+
+}
+
+.custom-box h2 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.custom-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+/* loppui tähän */
+
+/* tervetuloa boxin call to action nappi */
+.styled-link {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    background-color: #64005f; 
+    padding: 10px 20px;
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.styled-link:hover {
+    background-color: #91008c; 
+    transform: translateY(-3px); 
+}
+/* Loppui tähän */
+
+
+/* Mobiilinäkymä (alle 768px leveille näytöille) */
+@media screen and (max-width: 768px) {
+    .custom-box {
+        width: 80%; 
+    }
+    .custom-box h2 {
+        font-size: 2rem; 
+    }
+    .custom-box p {
+        font-size: 1rem; 
+    }
+    .styled-link {
+        font-size: 1.1rem; 
+        padding: 8px 16px; 
+    }
+
+   
+}
+
+/* Pienen näytön näkymä (alle 480px leveille näytöille) */
+@media screen and (max-width: 480px) {
+    .custom-box {
+        width: 90%; 
+    }
+    .custom-box h2 {
+        font-size: 1.8rem; 
+    }
+    .custom-box p {
+        font-size: 0.9rem; 
+    }
+    .styled-link {
+        font-size: 1rem; 
+        padding: 7px 14px; 
+    }
+    .musaBoxi{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        position: relative;
+        left: 10%;
+}
+}
+
+/* tästä alkaa footer osuus */
+footer{
+    background: #115485;
+    font-size: larger;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: auto;
+
+    
+
+}
+
+.hypelink1{
+    color: #fff;
+    position: absolute;
+    bottom: 40%;
+    right: 12%;
+    
+    
+}
+
+.hypelink2{
+    color: #fff;
+    position: relative;
+    bottom: 20%;
+    left: 35%;
+}
+
+.socialTag{
+    font-size: 3em;
+    position: relative;
+    right: 30%;
+    top: 0.2em;
+    color: rgb(245, 245, 245);
+}
+
+.socialTagFa{
+    font-size: 3em;
+    position: relative;
+    right: 29%;
+    top: 0.2em;
+    color: #fff;
+
+}
+
+
+/* tämä on copyright merkin muotoilua */
+.copy{
+    position: relative;
+    bottom: 0.5em;
+    color: #fff;
+}
+/* loppuu tähän */
+
+
+body {
+    width: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(81, 62, 255, 0.65),rgba(114, 74, 111, 0.65)), 
+    url(pexels-jakubzerdzicki-17561470.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/* tästä alkaa musiikkisoittimen sivun muotoilua */ 
+ .lofiKuva {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* musiikkisoitin tekstiboksi */
+.custom-box2 {
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color: rgba(35, 51, 121, 0.5); 
+    color: white;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.custom-box2 h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.custom-box2 p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* itse musaboxi */
+.musaBoxi{
+    width: 40%;
+    max-width: 600px; 
+    min-width: 370px; 
+    margin: 40px auto;
+    padding: 40px;
+    background-image: url(cozy2.png);
+    background-size: 100%;
+    opacity: 85%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(88, 1, 74, 0.2); 
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    filter: blur();
+}
+
+
+.boxiTekstit {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px;
+    background: linear-gradient(90deg, #a020f0, #ff007f); 
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    border-radius: 10px; 
+    display: inline-block; 
+}
+
+.boxiTekstit {
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(50, 0, 100, 1); 
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    text-align: justify;
+}
+
+.boxiTekstit  {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    background-color: #64005f; 
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+}
+.boxiTekstit {
+    background-color: #91008c; 
+    transform: translateY(-5px); 
+}
+
+/* tähän loppuu musiikkisoittimen sivun muotoilu */
+
+
+/* yhteystiedot sivun osuus */
+
+/* Otsikon tyyli */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Tekstiboxin tyyli */
+.contact-box {
+    background-color: #dfb0e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 40px; 
+}
+
+/* Tekstiboxin otsikko */
+.contact-box h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Kontaktin teksti */
+.contact-box p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Korostettu teksti */
+.contact-box strong {
+    color: #007BFF;
+}
+
+/* Kuvan tyyli */
+.contact-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* tähän loppuu yhteystiedot muotoilun osuus */
